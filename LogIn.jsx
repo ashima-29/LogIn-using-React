@@ -31,8 +31,6 @@ function App() {
     var { uname, pass } = document.forms[0];
     const userData = database.find((user) => user.username === uname.value);
   
-
-    // Compare user info
     if (userData) {
       if (userData.password !== pass.value) {
         
